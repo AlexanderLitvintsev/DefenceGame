@@ -1,0 +1,1 @@
+E:\Android\GitHub\DefenceGame\obj\Release\Assembly-CSharp.csprojResolveAssemblyReference.cache
