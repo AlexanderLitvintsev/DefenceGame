@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class PlayerScript : MonoBehaviour {
 
-    // скорость движения
+
     public Vector2 speed = new Vector2(50, 50);
 
-    // направление движения
+
     private Vector2 movement;
 
     private Rigidbody2D rg2D_obj;
@@ -37,7 +37,7 @@ public class PlayerScript : MonoBehaviour {
         // 5 - Shooting
         bool shoot = Input.GetButtonDown("Fire1");
         shoot |= Input.GetButtonDown("Fire2");
-        // Careful: For Mac users, ctrl + arrow is a bad idea
+
 
         if (shoot)
         {

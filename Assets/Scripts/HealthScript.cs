@@ -1,30 +1,28 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-/// Handle hitpoints and damages
-
 public class HealthScript : MonoBehaviour
 {
 
 
-    /// Total hitpoints
     public int hp = 1;
-
-
-    /// Enemy or player?
+    
     public bool isEnemy = true;
-
-
-    /// Inflicts damage and check if the object should be destroyed
-    /// <param name="damageCount"></param>
+    
     public void Damage(int damageCount)
     {
         hp -= damageCount;
 
         if (hp <= 0)
         {
+            //    gameObject.x = 0;
+            //    gameObject.y = 0;
+            GetComponent<EnemyScript>().speed.x = 0;
+            GetComponent<EnemyScript>().speed.y = 0;
+            GetComponent<Animation>().Play("zb_dead1");
+            
             // Dead!
-            Destroy(gameObject);
+            Destroy(gameObject, 2f);
         }
     }
 
@@ -37,10 +35,13 @@ public class HealthScript : MonoBehaviour
             // Avoid friendly fire
             if (shot.isEnemyShot != isEnemy)
             {
+
+
                 Damage(shot.damage);
 
+
                 // Destroy the shot
-                Destroy(shot.gameObject); // Remember to always target the game object, otherwise you will just remove the script
+                Destroy(shot.gameObject); 
             }
         }
     }

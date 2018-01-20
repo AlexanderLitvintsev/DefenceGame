@@ -237,6 +237,9 @@ GameObject:
   - component: {fileID: 11100000}
   - component: {fileID: 11400000}
   - component: {fileID: 11400002}
+  - component: {fileID: 50077926683539040}
+  - component: {fileID: 114299186760870182}
+  - component: {fileID: 114252942999184110}
   m_Layer: 0
   m_Name: urban_zombie_mobile7
   m_TagString: Untagged
@@ -506,7 +509,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100030}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 11, y: 0, z: -2}
   m_LocalScale: {x: 1.4, y: 1.4, z: 1.4}
   m_Children:
   - {fileID: 400006}
@@ -562,7 +565,7 @@ Animation:
   m_GameObject: {fileID: 100030}
   m_Enabled: 1
   serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: 6a042d814e24c9941b15cfba06cb1243, type: 3}
+  m_Animation: {fileID: 7400000, guid: a7cc0fb5aedd1d5469bfa93c033e2945, type: 3}
   m_Animations:
   - {fileID: 7400000, guid: 6081c0a00d52b3546a8d56a6de04d6a9, type: 3}
   - {fileID: 7400000, guid: 020a35c020056144082204b250f566b5, type: 3}
@@ -735,3 +738,49 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 100030}
   m_IsPrefabParent: 1
+--- !u!50 &50077926683539040
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100030}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
+--- !u!114 &114252942999184110
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100030}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceac7418485ca88419e48eec198abfd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 1
+  isEnemy: 1
+--- !u!114 &114299186760870182
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100030}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 353d1d606d8ee1e4785cecd2506dc03f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: {x: 0.8, y: 0}
+  direction: {x: -1, y: 0}

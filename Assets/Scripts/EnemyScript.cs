@@ -14,6 +14,7 @@ public class EnemyScript : MonoBehaviour {
 
     private Rigidbody2D rg2D_obj;
 
+   
 
     // Use this for initialization
     void Start () {
@@ -31,9 +32,11 @@ public class EnemyScript : MonoBehaviour {
         // перемещение
         movement = new Vector2(
             speed.x * direction.x,
-            speed.y * direction.y);  
-  
-	}
+            speed.y * direction.y);
+
+    
+
+    }
 
     void FixedUpdate()
     {

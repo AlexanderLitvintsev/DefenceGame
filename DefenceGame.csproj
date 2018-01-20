@@ -246,6 +246,7 @@
     <Compile Include="Assets\[urban]zombies\demo_scenes\sprite_mecanim\scripts\ubzb_sm_anicontroller.cs" />
     <Compile Include="Assets\[urban]zombies\demo_scenes\sprite_mecanim\scripts\ubzb_sm_gui.cs" />
     <Compile Include="Assets\[urban]zombies\demo_scenes\sprite_mecanim\scripts\ubzb_sm_skinchanger.cs" />
+    <Compile Include="Assets\Scripts\EnemyManager.cs" />
     <Compile Include="Assets\Scripts\EnemyScript.cs" />
     <Compile Include="Assets\Scripts\HealthScript.cs" />
     <Compile Include="Assets\Scripts\MoveScript.cs" />
