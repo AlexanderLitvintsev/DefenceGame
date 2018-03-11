@@ -123,8 +123,9 @@ GameObject:
   - component: {fileID: 100659251}
   - component: {fileID: 100659250}
   - component: {fileID: 100659249}
+  - component: {fileID: 100659253}
   m_Layer: 0
-  m_Name: Main Camera
+  m_Name: MainCamera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -192,6 +193,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &100659253
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 100659248}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdad7c4f18b52f0429f864933e4a8273, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bTexture_arrow: {fileID: 0}
+  bTexture_rocket: {fileID: 0}
 --- !u!1 &360738337
 GameObject:
   m_ObjectHideFlags: 0
@@ -511,6 +525,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shotPrefab: {fileID: 4061546153144226, guid: c5d222f68a375a645b2c79e9319ffaee, type: 2}
+  shotPrefab_Arrow: {fileID: 4025099650672686, guid: c3dc8916d9a377642868aad11c518fab,
+    type: 2}
+  shotPrefab_Rocket: {fileID: 4252654483567882, guid: 29aa624ad4d880c4ebcfb04a1245ec51,
+    type: 2}
   shootingRate: 0.25
 --- !u!1 &2015406083
 GameObject:
